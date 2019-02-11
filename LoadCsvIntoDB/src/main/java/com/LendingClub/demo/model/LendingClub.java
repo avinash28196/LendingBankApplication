@@ -1,35 +1,54 @@
 package com.LendingClub.demo.model;
 
 
-
-
-
 public class LendingClub {
 
-    Long member_id;
-    String loan_amnt;
-    String funded_amnt_inv;
-    String term ;
-    String int_rate ;
+    private Long member_id;
+    private String loan_amnt;
+    private String funded_amnt_inv;
+    private String term ;
+    private String int_rate ;
+    private String installment ;
+    private String grade ;
+    private String emp_title ;
+    private String emp_length ;
+    private String home_ownership;
+    private String annual_inc ;
+    private String issue_d ;
+    private String verification_status ;
+    private String loan_status ;
+    private String descr ;
+    private String purpose ;
+    private String title ;
+    private String addr_state ;
+    private String last_pymnt_d ;
+    private String last_pymnt_amnt;
 
-    String installment ;
-    String grade ;
-    String emp_title ;
-    String emp_length ;
-    String home_ownership;
-
-    String annual_inc ;
-    String issue_d ;
-    String verification_status ;
-    String loan_status ;
-    String descr ;
-
-    String purpose ;
-    String title ;
-    String addr_state ;
-    String last_pymnt_d ;
-    String last_pymnt_amnt;
-
+    @Override
+    public String toString() {
+        return "LendingClub{" +
+                "member_id=" + member_id +
+                ", loan_amnt='" + loan_amnt + '\'' +
+                ", funded_amnt_inv='" + funded_amnt_inv + '\'' +
+                ", term='" + term + '\'' +
+                ", int_rate='" + int_rate + '\'' +
+                ", installment='" + installment + '\'' +
+                ", grade='" + grade + '\'' +
+                ", emp_title='" + emp_title + '\'' +
+                ", emp_length='" + emp_length + '\'' +
+                ", home_ownership='" + home_ownership + '\'' +
+                ", annual_inc='" + annual_inc + '\'' +
+                ", issue_d='" + issue_d + '\'' +
+                ", verification_status='" + verification_status + '\'' +
+                ", loan_status='" + loan_status + '\'' +
+                ", descr='" + descr + '\'' +
+                ", purpose='" + purpose + '\'' +
+                ", title='" + title + '\'' +
+                ", addr_state='" + addr_state + '\'' +
+                ", last_pymnt_d='" + last_pymnt_d + '\'' +
+                ", last_pymnt_amnt='" + last_pymnt_amnt + '\'' +
+                '}';
+    }
 
     public Long getMember_id() {
         return member_id;
@@ -190,30 +209,5 @@ public class LendingClub {
     public void setLast_pymnt_amnt(String last_pymnt_amnt) {
         this.last_pymnt_amnt = last_pymnt_amnt;
     }
-
-    @Override
-    public String toString() {
-        return "LendingClub{" +
-                "member_id=" + member_id +
-                ", loan_amnt='" + loan_amnt + '\'' +
-                ", funded_amnt_inv='" + funded_amnt_inv + '\'' +
-                ", term='" + term + '\'' +
-                ", int_rate='" + int_rate + '\'' +
-                ", installment='" + installment + '\'' +
-                ", grade='" + grade + '\'' +
-                ", emp_title='" + emp_title + '\'' +
-                ", emp_length='" + emp_length + '\'' +
-                ", home_ownership='" + home_ownership + '\'' +
-                ", annual_inc='" + annual_inc + '\'' +
-                ", issue_d='" + issue_d + '\'' +
-                ", verification_status='" + verification_status + '\'' +
-                ", loan_status='" + loan_status + '\'' +
-                ", descr='" + descr + '\'' +
-                ", purpose='" + purpose + '\'' +
-                ", title='" + title + '\'' +
-                ", addr_state='" + addr_state + '\'' +
-                ", last_pymnt_d='" + last_pymnt_d + '\'' +
-                ", last_pymnt_amnt='" + last_pymnt_amnt + '\'' +
-                '}';
-    }
 }
+
