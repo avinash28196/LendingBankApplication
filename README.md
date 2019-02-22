@@ -1,3 +1,3 @@
 # LendingBankApplication
 
-cominv soon
+coming soon
